@@ -10,10 +10,7 @@ class GetPlayerList
     end
   end
 
-
-  private :does_player_table_exist?, :do_we_need_reload_from_cbs_sports?
-
-
+private
   def does_player_table_exist?
     ActiveRecord::Base.connection.table_exists?('players')
   end
@@ -26,7 +23,7 @@ class GetPlayerList
   #In order to retrieve new cbs_api just empty player table next
   # time api is requested it will reload or when system starts up.
   # I woould suggest bring down rails, emptying the table and restarting app, otherwise api csll may take to long an fail
-
+public
   def initialize_players_table(sports_id)
     if do_we_need_reload_from_cbs_sports?
       begin
