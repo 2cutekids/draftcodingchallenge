@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee76ac9-2337-4207-833e-d75b49286c1f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/cbs_players.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cbs_players.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Interactors/get_player_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/Interactors/get_player_list.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/player_age.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/player_age.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -77,10 +75,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secrets.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="secrets.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/secrets.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-51" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player_age.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/player_age.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_player_list.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Interactors/get_player_list.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -89,24 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20180411163619_create_sports.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180411163619_create_sports.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20180413113858_add_index_to_players.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180413113858_add_index_to_players.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -150,19 +148,19 @@
         <option value="$PROJECT_DIR$/app/serializers/api/v1/SportSerializer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/sports_controller.rb" />
         <option value="$PROJECT_DIR$/app/serializers/api/v1/sport_serializer.rb" />
-        <option value="$PROJECT_DIR$/app/models/player_age.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/players_controller.rb" />
         <option value="$PROJECT_DIR$/app/serializers/api/v1/player_serializer.rb" />
         <option value="$PROJECT_DIR$/app/models/player.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/Interactors/get_player_list.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180327161139_create_players.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180413113858_add_index_to_players.rb" />
         <option value="$PROJECT_DIR$/config/initializers/cbs_players.rb" />
         <option value="$PROJECT_DIR$/config/initializers/secret_token.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/models/player_age.rb" />
+        <option value="$PROJECT_DIR$/app/Interactors/get_player_list.rb" />
       </list>
     </option>
   </component>
@@ -403,12 +401,12 @@
       <workItem from="1523456308324" duration="34041000" />
       <workItem from="1523560634810" duration="1440000" />
       <workItem from="1523562181178" duration="630000" />
-      <workItem from="1523618614666" duration="2917000" />
+      <workItem from="1523618614666" duration="4264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108711000" />
+    <option name="totallyTimeSpent" value="110058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="74" width="1343" height="688" extended-state="0" />
@@ -626,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/player_age.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/ostruct.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -818,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Interactors/get_player_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180327161139_create_players.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -884,9 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/secrets.yml.enc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/secrets.yml.key">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -894,9 +875,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/secrets.yml.enc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/secrets.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/player_age.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Interactors/get_player_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        </state>
       </provider>
     </entry>
   </component>

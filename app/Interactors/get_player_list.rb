@@ -46,9 +46,8 @@ public
         raise
       end
     end
-    if does_player_table_exist? && (PlayerAge.position_ages_by_sport.blank? ||\
-     (sports_id && PlayerAge.position_ages_by_sport[sports_id].blank?))
-      PlayerAge.create_player_age_list(sports_id ? Player.where("sport_id = ?", sports_id) : Player.all)
+    if does_player_table_exist?
+      PlayerAge.create_player_age_list(sports_id)
     end
   end
 end
