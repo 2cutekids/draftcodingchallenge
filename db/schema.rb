@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411163619) do
+ActiveRecord::Schema.define(version: 20180413113858) do
 
   create_table "players", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "firstname"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20180411163619) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["lastname", "firstname"], name: "index_players_on_lastname_and_firstname"
+    t.index ["sport_id", "lastname", "firstname"], name: "index_players_on_sport_id_and_lastname_and_firstname"
   end
 
   create_table "sports", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
