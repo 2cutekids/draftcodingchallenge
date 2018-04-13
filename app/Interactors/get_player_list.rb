@@ -26,6 +26,7 @@ private
 public
   def initialize_players_table(sports_id)
     if do_we_need_reload_from_cbs_sports?
+      PlayerAge.initialize_position_ages_by_sport
       begin
         Sport.all.each do |activity|
           sport = activity
@@ -47,7 +48,7 @@ public
       end
     end
     if does_player_table_exist?
-      PlayerAge.create_player_age_list(sports_id)
+      PlayerAge.new().create_player_age_list(sports_id)
     end
   end
 end
